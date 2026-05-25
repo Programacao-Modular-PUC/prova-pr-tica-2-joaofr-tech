@@ -79,5 +79,14 @@ public abstract class Veiculo {
 
     public abstract boolean possuiSeguroEspecial();
     
+    @Override
+    public String toString() {
+        return "\nPlaca: " + placa +
+                "\nModelo: " + modelo +
+                "\nAno: " + anoFabricacao +
+                "\nDiária: " + valorDiaria +
+                "\nKM: " + quilometragem +
+                "\nStatus: " + status;
+    }
 }
 
